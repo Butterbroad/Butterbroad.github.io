@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?ngp7vu');
+    src:  url('../fonts/icomoon.eot?ngp7vu#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?ngp7vu') format('truetype'),
+      url('../fonts/icomoon.woff?ngp7vu') format('woff'),
+      url('../fonts/icomoon.svg?ngp7vu#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  
+
+.icon-envelope-o:before {
+  content: "\f003";
+}
+.icon-home:before {
+  content: "\f015";
+}
+.icon-pencil:before {
+  content: "\f040";
+}
+.icon-cogs:before {
+  content: "\f085";
+}
+.icon-gears:before {
+  content: "\f085";
+}
+.icon-heart-o:before {
+  content: "\f08a";
+}
+.icon-external-link:before {
+  content: "\f08e";
+}
+.icon-phone:before {
+  content: "\f095";
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-facebook-f:before {
+  content: "\f09a";
+}
+.icon-google-plus:before {
+  content: "\f0d5";
+}
+.icon-linkedin:before {
+  content: "\f0e1";
+}
+.icon-file-text-o:before {
+  content: "\f0f6";
+}
+.icon-desktop:before {
+  content: "\f108";
+}
+.icon-code:before {
+  content: "\f121";
+}
+.icon-chain-broken:before {
+  content: "\f127";
+}
+.icon-unlink:before {
+  content: "\f127";
+}
+.icon-apple:before {
+  content: "\f179";
+}
+.icon-windows:before {
+  content: "\f17a";
+}
+.icon-behance:before {
+  content: "\f1b4";
+}
+.icon-life-bouy:before {
+  content: "\f1cd";
+}
+.icon-life-buoy:before {
+  content: "\f1cd";
+}
+.icon-life-ring:before {
+  content: "\f1cd";
+}
+.icon-life-saver:before {
+  content: "\f1cd";
+}
+.icon-support:before {
+  content: "\f1cd";
+}
+.icon-transgender-alt:before {
+  content: "\f225";
+}
+.icon-pinterest-p:before {
+  content: "\f231";
+}
+.icon-television:before {
+  content: "\f26c";
+}
+.icon-tv:before {
+  content: "\f26c";
+}
+
+  
