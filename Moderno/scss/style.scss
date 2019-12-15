@@ -158,7 +158,8 @@
 .message__box {
     position: relative;
     height: 90px;
-    margin-top: 42px;
+    display: flex;
+    align-items: center;
     &:hover {
         .user__menu {
             height: auto;
@@ -174,7 +175,7 @@
     position: absolute;
     padding: 0 20px;
     width: 158px;
-    top: 69px;
+    top: 90px;
     left: 20px;
     transition: all .3s;
     height: 0px;
@@ -194,7 +195,7 @@
 }
 .circle__menu {
     position: absolute;
-    top: 61px;
+    top: 90px;
     right: 0;
     border-top: 0px solid #e0e0e0;
     height: 0;
@@ -204,7 +205,6 @@
 .basket__box,
 .notification__box,
 .message__box {
-    margin-top: 57px;
     padding-left: 15px;
     &:hover {
         .header__circle::before {
