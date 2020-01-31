@@ -21,9 +21,7 @@ let isMobile = {
 
 let body = document.querySelector('body');
 if (isMobile.any()) {
-    body.classList.add('touch');
     let arrow = document.querySelectorAll('.arrow');
-
 
     for (let i = 0; i < arrow.length; i++) {
         arrow[i].addEventListener('click', function () {
@@ -41,8 +39,6 @@ if (isMobile.any()) {
         let thisArrow = arrow[i];
 
     }
-} else {
-    body.classList.add('no-touch');
 }
 
 let burger = document.querySelector('.burger__menu');
@@ -50,4 +46,21 @@ let navigation = document.querySelector('.menu__list');
 
 burger.addEventListener('click', function () {
     navigation.classList.toggle('show');
+});
+
+
+
+function toggleClass() {
+    if ($(window).width() < 769) {
+        body.classList.add('touch');
+        body.classList.remove('no-touch');
+    } else {
+        body.classList.add('no-touch');
+        body.classList.remove('touch');
+    }
+}
+toggleClass();
+
+$(window).resize(function () {
+    toggleClass();
 });
