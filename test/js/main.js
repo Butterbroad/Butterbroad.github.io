@@ -21,7 +21,9 @@ let isMobile = {
 
 let body = document.querySelector('body');
 if (isMobile.any()) {
+    body.classList.add('touch');
     let arrow = document.querySelectorAll('.arrow');
+
 
     for (let i = 0; i < arrow.length; i++) {
         arrow[i].addEventListener('click', function () {
@@ -39,6 +41,8 @@ if (isMobile.any()) {
         let thisArrow = arrow[i];
 
     }
+} else {
+    body.classList.add('no-touch');
 }
 
 let burger = document.querySelector('.burger__menu');
@@ -60,6 +64,7 @@ function toggleClass() {
     }
 }
 toggleClass();
+
 
 $(window).resize(function () {
     toggleClass();
