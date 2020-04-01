@@ -23,6 +23,8 @@
     }
 
     &__logo {
+        z-index: 10;
+
         img {
             display: block;
             max-width: 100%;
