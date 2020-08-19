@@ -49,7 +49,6 @@ if (document.body.clientWidth > 1023) {
 
 
 
-
 const stepSlider1 = document.querySelector('.swiper-container');
 
 var swiper = new Swiper(stepSlider1, {
@@ -63,7 +62,6 @@ var swiper = new Swiper(stepSlider1, {
         el: '.swiper-pagination',
     },
 });
-
 
 
 
