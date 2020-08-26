@@ -1,4 +1,3 @@
-// const header = document.querySelector('.header');
 const headerBurger = document.querySelector('.header__burger');
 const headerMenu = document.querySelector('.header__menu');
 const bodyLock = document.querySelector('body');
@@ -7,21 +6,8 @@ headerBurger.addEventListener('click', function () {
     headerBurger.classList.toggle('active');
     headerMenu.classList.toggle('active');
     bodyLock.classList.toggle('lock');
-    // header.classList.toggle('active');
 });
 
-// function headerBg() {
-//     if ($(window).scrollTop() == 0) {
-//         $('.header').css('background', 'transparent');
-//     } else {
-//         $('.header').css('background', '#50553e');
-//     }
-// }
-// headerBg();
-
-// $(window).scroll(function () {
-//     headerBg();
-// });
 
 if (document.body.clientWidth > 1023) {
     const spaceHolder = document.querySelector('.services__space-holder');
@@ -49,9 +35,9 @@ if (document.body.clientWidth > 1023) {
 
 
 
-const stepSlider1 = document.querySelector('.swiper-container');
+const preparingSlider = document.querySelector('.preparing__swiper-container');
 
-var swiper = new Swiper(stepSlider1, {
+var swiper = new Swiper(preparingSlider, {
     loop: true,
     speed: 800,
     autoplay: {
@@ -63,7 +49,44 @@ var swiper = new Swiper(stepSlider1, {
     },
 });
 
+const instrumentsSlider = document.querySelector('.instruments__swiper-container');
 
+var swiper = new Swiper(instrumentsSlider, {
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        320: {
+            centeredSlides: false,
+            slidesPerView: 1,
+            spaceBetween: 1,
+        },
+        360: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        670: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 50,
+        },
+        780: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+        },
+        1024: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+            centeredSlides: true,
+            grabCursor: true,
+        }
+    }
+});
 
 
 
