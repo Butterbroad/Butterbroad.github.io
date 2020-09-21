@@ -1,233 +1,286 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Test</title>
+  <title>Title</title>
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
   <header class="header">
-    <div class="container">
-      <div class="header__inner">
-        <div class="header__logo">
-          <a href="#">Лого</a>
-        </div>
-        <nav class="header__menu">
-          <ul class="menu__list">
-            <li>
-              <a href="#" class="menu__link">Образовательные курсы</a>
-              <span class="dropdown__arrow arrow"></span>
-            </li>
-            <li>
-              <a href="#" class="menu__link">Консультации</a>
-              <span class="dropdown__arrow arrow"></span>
-            </li>
-            <li>
-              <a href="#" class="menu__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__contacts">
-          <a href="tel:375297090967" class="contacts__phone">+ 375 (29) 709-09-67</a>
-          <ul class="contacts__social">
-            <li><a href="#" class="social-link">
-                <img src="img/facebook.svg" alt="">
-              </a></li>
-            <li><a href="#" class="social-link">
-                <img src="img/instagram.svg" alt="">
-              </a></li>
-            <li><a href="#" class="social-link">
-                <img src="img/twitter.svg" alt="">
-              </a></li>
-            <li><a href="#" class="social-link">
-                <img src="img/vk.svg" alt="">
-              </a></li>
-            <li><a href="#" class="social-link">
-                <img src="img/telegram.svg" alt="">
-              </a></li>
-          </ul>
-        </div>
-        <div class="burger__menu">
-          <div class="burger__menu-row"></div>
-          <div class="burger__menu-row"></div>
-          <div class="burger__menu-row"></div>
-        </div>
-        <div class="login">
-          <a href="#" class="login-link">Войти</a>
-        </div>
-      </div>
+    <div class="header__wrapper">
+      <nav class="header__menu menu-header">
+        <ul class="menu-header__list">
+          <li>
+            <a href="#" class="menu-header__link">Home</a>
+          </li>
+          <li>
+            <a href="#" class="menu-header__link">Products</a>
+          </li>
+          <li>
+            <a href="#" class="menu-header__link">Company</a>
+          </li>
+          <li>
+            <a href="#" class="menu-header__link">Blog</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-
   </header>
 
-  <section class="courses" style='background-image: url(img/courses.jpg);'>
-    <div class="container">
-      <div class="coursess__inner">
-        <div class="coursess__title">Онлайн-курсы и группы подержки для психологов</div>
-        <div class="coursess__text">Помогаем, обучаем, сопровождаем — <br> без риска выгорания в профессии психолога
+  <main class="content">
+    <div class="content__wrapper">
+      <aside class="content__aside aside-menu">
+        <div class="aside-menu__wrapper">
+          <ul class="aside-menu__list">
+
+            <li class="aside-menu__item">
+              <i class="fas fa-address-book"></i>
+              <a href="">Some link</a>
+            </li>
+
+            <li class="aside-menu__item">
+              <input class="aside-menu__input" type="checkbox" id="aside-item1">
+              <label class="aside-menu__trigger" for="aside-item1">
+                <i class="fab fa-accusoft"></i>
+                Something
+              </label>
+              <div class="aside-menu__content">
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                <a href="">Some link</a>
+              </div>
+            </li>
+
+            <li class="aside-menu__item">
+              <input class="aside-menu__input" type="checkbox" id="aside-item2">
+              <label class="aside-menu__trigger" for="aside-item2">
+                <i class="fas fa-arrow-circle-down"></i>
+                Something
+              </label>
+              <div class="aside-menu__content">
+                <input class="aside-menu__input" type="checkbox" id="aside-item3">
+                <label class="aside-menu__trigger aside-menu__trigger_2" for="aside-item3">
+                  <i class="fas fa-archive"></i>
+                  Something
+                </label>
+                <div class="aside-menu__content aside-menu__content_2">
+                  <i class="fab fa-accusoft"></i>
+                  <a href="">Some link</a>
+                </div>
+                <div class="aside-menu__content aside-menu__content_2">
+                  <i class="fab fa-accusoft"></i>
+                  <a href="">Some link</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="aside-menu__item">
+              <input class="aside-menu__input" type="checkbox" id="aside-item4">
+              <label class="aside-menu__trigger" for="aside-item4">
+                <i class="fab fa-accusoft"></i>
+                Something
+              </label>
+              <div class="aside-menu__content">
+                <input class="aside-menu__input" type="checkbox" id="aside-item5">
+                <label class="aside-menu__trigger aside-menu__trigger_2" for="aside-item5">
+                  <i class="fas fa-check"></i>
+                  Something
+                </label>
+                <div class="aside-menu__content aside-menu__content_2">
+                  <input class="aside-menu__input" type="checkbox" id="aside-item6">
+                  <label class="aside-menu__trigger aside-menu__trigger_2" for="aside-item6">
+                    <i class="fas fa-folder-open"></i>
+                    Something
+                  </label>
+                  <div class="aside-menu__content aside-menu__content_2">
+                    <i class="fab fa-accusoft"></i>
+                    <a href="">Some link</a>
+                  </div>
+                  <div class="aside-menu__content aside-menu__content_2">
+                    <i class="fab fa-accusoft"></i>
+                    <a href="">Some link</a>
+                  </div>
+                  <div class="aside-menu__content aside-menu__content_2">
+                    <i class="fab fa-accusoft"></i>
+                    <a href="">Some link</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
         </div>
-        <div class="coursess__btn-box">
-          <div class="coursess__btn"><a href="#" class="coursess__btn-link">Выбрать курс</a></div>
-          <div class="coursess__btn"><a href="#" class="coursess__btn-link">Получить бесплатную консультацию</a></div>
+      </aside>
+
+      <div class="content__body">
+        <div class="content__breadcrumbs breadcrumbs">
+          <div class="breadcrumbs__inner">
+            <ul class="breadcrumbs__list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Xyz</a></li>
+              <li><span>Features</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="content__inner">
+          <div class="content__items">
+            <div class="content__item">
+              <a href="" class="content__item-img">
+                <img src="http://placehold.it/250x250" alt="" />
+              </a>
+              <a href="" class="content__item-title">
+                A Subtitle
+              </a>
+            </div>
+            <div class="content__item">
+              <a href="" class="content__item-img">
+                <img src="http://placehold.it/300x300" alt="" />
+              </a>
+              <a href="" class="content__item-title">
+                A Subtitle
+              </a>
+            </div>
+            <div class="content__item">
+              <a href="" class="content__item-img">
+                <img src="http://placehold.it/500x600" alt="" />
+              </a>
+              <a href="" class="content__item-title">
+                A Subtitle
+              </a>
+            </div>
+            <div class="content__item">
+              <a href="" class="content__item-img">
+                <img src="http://placehold.it/1000x1000" alt="" />
+              </a>
+              <a href="" class="content__item-title">
+                A Subtitle
+              </a>
+            </div>
+            <div class="content__item">
+              <a href="" class="content__item-img">
+                <img src="http://placehold.it/200x400" alt="" />
+              </a>
+              <a href="" class="content__item-title">
+                A Subtitle
+              </a>
+            </div>
+            <div class="content__item">
+              <a href="" class="content__item-img">
+                <img src="http://placehold.it/250x250" alt="" />
+              </a>
+              <a href="" class="content__item-title">
+                A Subtitle
+              </a>
+            </div>
+            <div class="content__item">
+              <a href="" class="content__item-img">
+                <img src="http://placehold.it/250x250" alt="" />
+              </a>
+              <a href="" class="content__item-title">
+                A Subtitle
+              </a>
+            </div>
+            <div class="content__item">
+              <a href="" class="content__item-img">
+                <img src="http://placehold.it/250x250" alt="" />
+              </a>
+              <a href="" class="content__item-title">
+                A Subtitle
+              </a>
+            </div>
+            <div class="content__item">
+              <a href="" class="content__item-img">
+                <img src="http://placehold.it/250x250" alt="" />
+              </a>
+              <a href="" class="content__item-title">
+                A Subtitle
+              </a>
+            </div>
+            <div class="content__item">
+              <a href="" class="content__item-img">
+                <img src="http://placehold.it/250x250" alt="" />
+              </a>
+              <a href="" class="content__item-title">
+                A Subtitle
+              </a>
+            </div>
+            <div class="content__item">
+              <a href="" class="content__item-img">
+                <img src="http://placehold.it/250x250" alt="" />
+              </a>
+              <a href="" class="content__item-title">
+                A Subtitle
+              </a>
+            </div>
+            <div class="content__item">
+              <a href="" class="content__item-img">
+                <img src="http://placehold.it/250x250" alt="" />
+              </a>
+              <a href="" class="content__item-title">
+                A Subtitle
+              </a>
+            </div>
+            <div class="content__item">
+              <a href="" class="content__item-img">
+                <img src="http://placehold.it/250x250" alt="" />
+              </a>
+              <a href="" class="content__item-title">
+                A Subtitle
+              </a>
+            </div>
+            <div class="content__item">
+              <a href="" class="content__item-img">
+                <img src="http://placehold.it/250x250" alt="" />
+              </a>
+              <a href="" class="content__item-title">
+                A Subtitle
+              </a>
+            </div>
+            <div class="content__item">
+              <a href="" class="content__item-img">
+                <img src="http://placehold.it/250x250" alt="" />
+              </a>
+              <a href="" class="content__item-title">
+                A Subtitle
+              </a>
+            </div>
+            <div class="content__item">
+              <a href="" class="content__item-img">
+                <img src="http://placehold.it/250x250" alt="" />
+              </a>
+              <a href="" class="content__item-title">
+                A Subtitle
+              </a>
+            </div>
+            <div class="content__item">
+              <a href="" class="content__item-img">
+                <img src="http://placehold.it/250x250" alt="" />
+              </a>
+              <a href="" class="content__item-title">
+                A Subtitle
+              </a>
+            </div>
+            <div class="content__item">
+              <a href="" class="content__item-img">
+                <img src="http://placehold.it/250x250" alt="" />
+              </a>
+              <a href="" class="content__item-title">
+                A Subtitle
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="courses-request">
-    <div class="container">
-      <div class="courses-request__row">
-        <div class="courses-request__item">
-          <div class="request-item__img">
-            <img src="img/hexagon.svg" alt="">
-            <span class="request-item__prof request-item__prof_1">Психотерапевтам</span>
-            <span class="request-item__prof request-item__prof_2">Преподавателям</span>
-            <span class="request-item__prof request-item__prof_3">Дефектологам</span>
-            <span class="request-item__prof request-item__prof_4">Тьюторам</span>
-            <span class="request-item__prof request-item__prof_5">Педагогам</span>
-            <span class="request-item__prof request-item__prof_6">Психологам</span>
-          </div>
-        </div>
-
-        <div class="courses-request__item">
-          <div class="request-item__text">Участвуйте в групповых встречах и получайте образование из любой точки мира
-          </div>
-          <a href="#" class="coursess__btn-link">Оставить заявку</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="courses-advantages">
-    <div class="container">
-      <div class="courses-advantages__row">
-        <div class="courses-advantages__item">
-          <div class="advantages-item__img">
-            <img src="img/advantages1.svg" alt="">
-          </div>
-          <div class="advantages-item__text">Направления <br> с доказанной эффективностью</div>
-          <a href="#" class="coursess__btn-link">Список курсов</a>
-        </div>
-
-        <div class="courses-advantages__item">
-          <div class="advantages-item__img">
-            <img src="img/advantages2.svg" alt="">
-          </div>
-          <div class="advantages-item__text">Сопровождение <br> в процессе обучения</div>
-          <a href="#" class="coursess__btn-link">Выбрать направление</a>
-        </div>
-
-        <div class="courses-advantages__item">
-          <div class="advantages-item__img">
-            <img src="img/advantages3.svg" alt="">
-          </div>
-          <div class="advantages-item__text">Практикующие психологи <br> с многолетним опытом lorem</div>
-          <a href="#" class="coursess__btn-link">Специалисты SUPP</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="courses-direction">
-    <div class="container">
-      <div class="courses-direction__title title">Какое направление выбираете вы?</div>
-      <div class="courses-direction__row">
-        <div class="courses-direction__item courses-direction__item_1">
-          <div class="direction-item__img">
-            <a href="#"><img src="img/direction1.jpg" alt=""></a>
-            <span class="direction-item__title">
-              <a href="#">Образовательные <br> курсы</a>
-            </span>
-          </div>
-        </div>
-        <div class="courses-direction__item courses-direction__item_2">
-          <div class="direction-item__img">
-            <a href="#"><img src="img/direction2.jpg" alt=""></a>
-            <span class="direction-item__title">
-              <a href="#">Супервизия</a>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="courses-direction__row">
-        <div class="courses-direction__item courses-direction__item_3">
-          <div class="direction-item__img">
-            <a href="#"><img src="img/direction3.jpg" alt=""></a>
-            <span class="direction-item__title">
-              <a href="#">Интервизия</a>
-            </span>
-          </div>
-        </div>
-        <div class="courses-direction__item courses-direction__item_4">
-          <div class="direction-item__img">
-            <a href="#"><img src="img/direction4.jpg" alt=""></a>
-            <span class="direction-item__title">
-              <a href="#">Психологическая помощь</a>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="courses-feedback">
-    <div class="container">
-      <div class="courses-feedback__title title">Отзывы</div>
-      <div class="courses-feedback__slider">
-        <div class="feedback-slider__item">
-          <div class="feedback-slider__img">
-            <img src="img/feedback.jpg" alt="">
-          </div>
-          <div class="feedback-slider__box">
-            <p class="feedback-slider__text">Большое спасибо за прекрасно структурированные курсы. Все понятно,
-              доступно: видно, что работали профессионалы своего дела. Давно хотела повысить свой уровень и какая удача
-              была наткнуться на онлайн-платформу SUPP! Буду советовать всем коллегам. Это 5 из 5 баллов!
-            </p>
-            <div class="feedback-slider__author">Елена Матюшева, 21 год</div>
-            <div class="feedback-slider__prof">Психолог</div>
-          </div>
-        </div>
-
-        <div class="feedback-slider__item">
-          <div class="feedback-slider__img">
-            <img src="img/feedback.jpg" alt="">
-          </div>
-          <div class="feedback-slider__box">
-            <p class="feedback-slider__text">Большое спасибо за прекрасно структурированные курсы. Все понятно,
-              доступно: видно, что работали профессионалы своего дела. Давно хотела повысить свой уровень и какая удача
-              была наткнуться на онлайн-платформу SUPP! Буду советовать всем коллегам. Это 5 из 5 баллов!
-            </p>
-            <div class="feedback-slider__author">Елена Матюшева, 21 год</div>
-            <div class="feedback-slider__prof">Психолог</div>
-          </div>
-        </div>
-
-        <div class="feedback-slider__item">
-          <div class="feedback-slider__img">
-            <img src="img/feedback.jpg" alt="">
-          </div>
-          <div class="feedback-slider__box">
-            <p class="feedback-slider__text">Большое спасибо за прекрасно структурированные курсы. Все понятно,
-              доступно: видно, что работали профессионалы своего дела. Давно хотела повысить свой уровень и какая удача
-              была наткнуться на онлайн-платформу SUPP! Буду советовать всем коллегам. Это 5 из 5 баллов!
-            </p>
-            <div class="feedback-slider__author">Елена Матюшева, 21 год</div>
-            <div class="feedback-slider__prof">Психолог</div>
-          </div>
-        </div>
-      </div>
-      <div class="courses-feedback__btn">
-        <a href="#" class="coursess__btn-link">Оставить отзыв</a>
-      </div>
-    </div>
-  </section>
-
+  </main>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
