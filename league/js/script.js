@@ -17,19 +17,7 @@
 'use strict';
 
 const animItems = document.querySelectorAll('.anim-item');
-function get_name_browser() {
-    let ua = navigator.userAgent;
-    if (ua.search(/YaBrowser/) > 0) return 'Яндекс Браузер';
-    if (ua.search(/rv:11.0/) > 0) return 'Internet Explorer 11';
-    if (ua.search(/MSIE/) > 0) return 'Internet Explorer';
-    if (ua.search(/Edge/) > 0) return 'Edge';
-    if (ua.search(/Chrome/) > 0) return 'Google Chrome';
-    if (ua.search(/Firefox/) > 0) return 'Firefox';
-    if (ua.search(/Opera/) > 0) return 'Opera';
-    if (ua.search(/Safari/) > 0) return 'Safari';
-    return 'Не определен';
-}
-let browser = get_name_browser();
+
 
 if (animItems.length > 0) {
 
@@ -42,6 +30,24 @@ if (animItems.length > 0) {
             const animItemOffset = offset(animItem).top;
             const animStart = 4;
 
+            function msieversion() {
+
+                var ua = window.navigator.userAgent;
+                var msie = ua.indexOf("MSIE ");
+
+                if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))  // If Internet Explorer, return version number
+                {
+                    alert(parseInt(ua.substring(msie + 5, ua.indexOf(".", msie))));
+                    animItem.classList.add('active');
+                }
+                else  // If another browser, return 0
+                {
+                    alert('otherbrowser');
+                }
+
+                return false;
+            }
+            msieversion();
             let animItemPoint = window.innerHeight - animItemHeight / animStart;
             if (animItemHeight > window.innerHeight) {
                 animItemPoint = window.innerHeight - window.innerHeight / animStart;
@@ -53,11 +59,6 @@ if (animItems.length > 0) {
                 if (!animItem.classList.contains("anim-no-hide")) {
                     animItem.classList.remove('active');
                 }
-            }
-
-            if (browser == 'Edge' || browser == 'Internet Explorer') {
-                alert('loh');
-                console.log('pizdets');
             }
         }
     }
@@ -73,9 +74,6 @@ if (animItems.length > 0) {
         animOnScroll();
     }, 700);
 }
-
-
-
 
 
 
