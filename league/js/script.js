@@ -14,9 +14,6 @@
 
 
 
-
-
-
 'use strict';
 
 const animItems = document.querySelectorAll('.anim-item');
@@ -45,6 +42,12 @@ if (animItems.length > 0) {
                     animItem.classList.remove('active');
                 }
             }
+            let ua = window.navigator.userAgent.toLowerCase(),
+                is_ie = (/trident/gi).test(ua) || (/msie/gi).test(ua);
+
+            if (is_ie) {
+                animItem.classList.add('active');
+            }
         }
     }
 
@@ -59,6 +62,7 @@ if (animItems.length > 0) {
         animOnScroll();
     }, 700);
 }
+
 
 
 
