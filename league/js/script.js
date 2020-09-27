@@ -56,7 +56,8 @@ if (animItems.length > 0) {
             }
 
             if (browser == 'Edge' || browser == 'Internet Explorer') {
-                animItem.classList.add('active');
+                alert('loh');
+                console.log('pizdets');
             }
         }
     }
