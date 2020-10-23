@@ -55,7 +55,7 @@ function getCanvas(canvas, canvasWidth, canvasHeight, wrapper, margin, framecoun
   const context = canvas.getContext("2d");
 
   const currentFrame = index => {
-    let pathToImg = `${path}/${index.toString().padStart(4, '0')}.${imgFotmat}`
+    let pathToImg = `${path}/${index.toString().padStart(4, '0')}.${imgFotmat || 'webp'}`
     return pathToImg;
   }
   const preloadImages = () => {
