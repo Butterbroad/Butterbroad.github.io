@@ -47,15 +47,13 @@ const sceneThreePostview = document.querySelector('.scene-three-postview');
 let margin4 = sceneOne.scrollHeight + hero.scrollHeight + sceneTwo.scrollHeight + sceneThree.scrollHeight + 2600;
 const canvas5 = document.getElementById("canvas5");
 
-//sticky section
-const sticky = document.querySelector('.sticky');
-
+const body = document.querySelector('body');
 
 function getCanvas(canvas, canvasWidth, canvasHeight, wrapper, margin, framecount, path, imgFotmat) {
   const context = canvas.getContext("2d");
 
   const currentFrame = index => {
-    let pathToImg = `${path}/${index.toString().padStart(4, '0')}.${imgFotmat || 'webp'}`
+    let pathToImg = `${path}/${index.toString().padStart(4, '0')}.${body.classList.contains('webp') ? 'webp' : imgFotmat}`
     return pathToImg;
   }
   const preloadImages = () => {
@@ -107,7 +105,8 @@ getCanvas(canvas5, 1920, 1080, sceneThreePostview, margin4, 64, '../img/scene3/a
 
 
 
-
+//sticky section
+// const sticky = document.querySelector('.sticky');
 
 // function showTriggerSection(section) {
 //   let top = section.getBoundingClientRect().top;
