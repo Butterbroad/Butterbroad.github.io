@@ -1,4 +1,4 @@
-
+'use strict'
 
 const sliderOne = new Swiper('.slider-one', {
   wrapperClass: 'slider__wrapper',
@@ -12,6 +12,14 @@ const sliderTwo = new Swiper('.slider-two', {
   slideClass: 'slider__item',
   slidesPerView: 5,
   spaceBetween: 10,
+});
+
+const catalogImgSlider = new Swiper('.catalog__item-slider', {
+  wrapperClass: 'catalog__item-slider-wrapper',
+  slideClass: 'catalog__item-slider-slide',
+  pagination: {
+    el: '.swiper-pagination',
+  },
 });
 
 
