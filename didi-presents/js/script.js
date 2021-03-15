@@ -25,15 +25,6 @@ const catalogImgSlider = new Swiper('.catalog__item-slider', {
 
 
 
-
-
-
-
-
-
-
-
-
 function testWebP(callback) {
 
     var webP = new Image();
