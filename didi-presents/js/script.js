@@ -22,6 +22,21 @@ const catalogImgSlider = new Swiper('.catalog__item-slider', {
   },
 });
 
+//header nav
+const headerNavigationLinks = document.querySelectorAll('.menu__list-item');
+
+headerNavigationLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    let path = link.getAttribute("data-path");
+    slideToSection(path);
+  });
+});
+
+function slideToSection(path) {
+  let getSection = document.getElementById(path);
+  getSection.scrollIntoView({ block: "start", behavior: "smooth" });
+}
+
 
 
 

@@ -310,13 +310,6 @@ h6 {
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
-}
-
-.menu__list-item:hover {
-  background-color: #e3ecef;
-}
-
-.menu__list-item a {
   color: #6e858a;
   text-decoration: none;
   height: 100%;
@@ -329,6 +322,11 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 16px;
+  cursor: pointer;
+}
+
+.menu__list-item:hover {
+  background-color: #e3ecef;
 }
 
 .logo {
