@@ -838,18 +838,57 @@ h6 {
   font-family: "MuseoSansCyrl-700", sans-serif;
 }
 
-.about__text {
-  font-size: 16px;
-  max-width: 50%;
+.about__box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.about__text span {
-  display: block;
+.about__text {
+  font-size: 16px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 55%;
+      -ms-flex: 0 1 55%;
+          flex: 0 1 55%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about__text p {
   margin-bottom: 20px;
 }
 
-.about__text span:last-child {
+.about__text p:last-child {
   margin-bottom: 0;
+}
+
+.about__text p span {
+  font-family: "MuseoSansCyrl-700", sans-serif;
+}
+
+.about__img {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 300px;
+      -ms-flex: 0 1 300px;
+          flex: 0 1 300px;
+  margin: 0 auto;
+}
+
+.about__img img {
+  max-width: 100%;
+  display: block;
 }
 
 .delivery__wrapper {
