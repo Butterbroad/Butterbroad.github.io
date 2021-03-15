@@ -891,6 +891,10 @@ h6 {
   display: block;
 }
 
+.delivery {
+  background-color: #f1f6f7;
+}
+
 .delivery__wrapper {
   max-width: 1470px;
   width: 100%;
@@ -909,13 +913,54 @@ h6 {
 .delivery__text {
   font-size: 16px;
   max-width: 50%;
+  margin: 0 auto;
 }
 
-.delivery__text span {
-  display: block;
+.delivery__list {
+  text-align: center;
+}
+
+.delivery__list-item {
   margin-bottom: 20px;
 }
 
-.delivery__text span:last-child {
+.delivery__list-item:last-child {
   margin-bottom: 0;
+}
+
+.payment__wrapper {
+  max-width: 1470px;
+  width: 100%;
+  padding: 40px 15px;
+  margin: 0 auto;
+}
+
+.payment__title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 26px;
+  line-height: 100%;
+  font-family: "MuseoSansCyrl-700", sans-serif;
+}
+
+.payment__text {
+  font-size: 16px;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.payment__list {
+  text-align: center;
+}
+
+.payment__list-item {
+  margin-bottom: 20px;
+}
+
+.payment__list-item:last-child {
+  margin-bottom: 0;
+}
+
+.payment__list-item span {
+  font-family: "MuseoSansCyrl-700", sans-serif;
 }
