@@ -48,7 +48,6 @@ upBtn.addEventListener('click', () => {
 
 window.addEventListener('scroll', () => {
   let scrolled = window.pageYOffset;
-  console.log(scrolled)
   if (scrolled > 700) {
     upBtn.style.display = 'flex';
   } else {
