@@ -927,6 +927,54 @@ h6 {
   margin-bottom: 0;
 }
 
+.contacts {
+  background-color: #f1f6f7;
+}
+
+.contacts__wrapper {
+  max-width: 1470px;
+  width: 100%;
+  padding: 40px 15px;
+  margin: 0 auto;
+}
+
+.contacts__title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 26px;
+  line-height: 100%;
+  font-family: "MuseoSansCyrl-700", sans-serif;
+}
+
+.contacts__list {
+  text-align: center;
+}
+
+.contacts__list-item {
+  margin-bottom: 20px;
+}
+
+.contacts__list-item:last-child {
+  margin-bottom: 0;
+}
+
+.contacts__list-link {
+  font-family: "MuseoSansCyrl-700", sans-serif;
+  color: #000;
+}
+
+.contacts__list-link_viber {
+  color: #8F5DB7;
+}
+
+.contacts__list-link_telegram {
+  color: #0088CC;
+}
+
+.contacts__list-link_instagram {
+  color: #FF6F91;
+}
+
 .payment__wrapper {
   max-width: 1470px;
   width: 100%;
@@ -962,4 +1010,25 @@ h6 {
 
 .payment__list-item span {
   font-family: "MuseoSansCyrl-700", sans-serif;
+}
+
+.footer {
+  background-color: #000;
+}
+
+.footer__wrapper {
+  max-width: 1470px;
+  width: 100%;
+  padding: 20px 15px;
+  margin: 0 auto;
+}
+
+.footer__text {
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+
+.footer__text span {
+  display: block;
 }

@@ -40,8 +40,6 @@ function slideToSection(path) {
 }
 
 
-
-
 function testWebP(callback) {
 
     var webP = new Image();
