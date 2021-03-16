@@ -39,6 +39,23 @@ function slideToSection(path) {
   }
 }
 
+//scroll to top btn
+const upBtn = document.querySelector('.btn-up');
+
+upBtn.addEventListener('click', () => {
+  scrollTo(0, 0);
+});
+
+window.addEventListener('scroll', () => {
+  let scrolled = window.pageYOffset;
+  console.log(scrolled)
+  if (scrolled > 700) {
+    upBtn.style.display = 'flex';
+  } else {
+    upBtn.style.display = 'none';
+  }
+});
+
 
 function testWebP(callback) {
 
