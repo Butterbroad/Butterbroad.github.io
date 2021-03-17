@@ -1047,6 +1047,107 @@ h6 {
   font-family: "MuseoSansCyrl-700", sans-serif;
 }
 
+.gallery__wrapper {
+  max-width: 1470px;
+  width: 100%;
+  padding: 40px 15px;
+  margin: 0 auto;
+}
+
+.gallery__row-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.gallery__row-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 26px;
+  line-height: 100%;
+  font-family: "MuseoSansCyrl-700", sans-serif;
+}
+
+.gallery__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 30%;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+  margin: 0 15px;
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  overflow: hidden;
+  -webkit-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.gallery__item:hover {
+  -webkit-box-shadow: 6px 6px 24px rgba(80, 89, 94, 0.994);
+          box-shadow: 6px 6px 24px rgba(80, 89, 94, 0.994);
+}
+
+.gallery__item:hover .gallery__item-box {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.gallery__item-img {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 100%;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  position: relative;
+  height: 400px;
+}
+
+.gallery__item-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery__item-box {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-transform: translate(0, 100%);
+      -ms-transform: translate(0, 100%);
+          transform: translate(0, 100%);
+  -webkit-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.gallery__item-title {
+  margin: 20px 0 10px 0;
+  font-size: 18px;
+  font-family: "MuseoSansCyrl-700", sans-serif;
+}
+
+.gallery__item-price {
+  margin-bottom: 20px;
+  font-family: "MuseoSansCyrl-500", sans-serif;
+}
+
 .footer {
   background-color: #000;
 }

@@ -35,7 +35,7 @@ headerNavigationLinks.forEach(link => {
 function slideToSection(path) {
   let getSection = document.getElementById(path);
   if (getSection) {
-    getSection.scrollIntoView({ block: "start", behavior: "smooth" });
+    getSection.scrollIntoView({ block: "center", behavior: "smooth" });
   }
 }
 
