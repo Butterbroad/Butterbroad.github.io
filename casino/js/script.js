@@ -42,34 +42,40 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function stepOneHandler() {
-    return setInterval(() => {
+    return setTimeout(() => {
       document.querySelector('.attempts__digit').textContent = '1';
       heroButton.style.pointerEvents = 'auto';
     }, 500);
   }
   function stepTwoHandler() {
-    return setInterval(() => {
+    return setTimeout(() => {
       heroBox.classList.add('active');
       heroButton.classList.add('registration');
-      if (lang === 'ru') {
-        heroButton.textContent = 'РЕГИСТРАЦИЯ';
-        heroTitle.textContent = 'вы выиграли 50$';
-        heroSubtitle.textContent = 'и 150 фриспинов';
-      }
-      if (lang === 'en') {
-        heroButton.textContent = 'registration';
-        heroTitle.textContent = 'YOU WIN $50';
-        heroSubtitle.textContent = 'and 150 FREE SPINS';
-      }
-      if (lang === 'tr') {
-        heroButton.textContent = 'Kayıt';
-        heroTitle.textContent = '50$ ve 150 BEDAVA';
-        heroSubtitle.textContent = 'DÖNDÜRME KAZANDINIZ';
-      }
+      heroContent.classList.add('win');
+
+      let currentLang = localStorage.getItem('lang');
+      changeStepTwoContent(currentLang);
 
       heroButton.setAttribute('href', "https://www.kingo.bet/");
-      heroContent.classList.add('win');
     }, 500);
+  }
+
+  function changeStepTwoContent(lang) {
+    if (lang === 'ru') {
+      heroButton.textContent = 'РЕГИСТРАЦИЯ';
+      heroTitle.textContent = 'вы выиграли 50$';
+      heroSubtitle.textContent = 'и 150 фриспинов';
+    }
+    if (lang === 'en') {
+      heroButton.textContent = 'registration';
+      heroTitle.textContent = 'YOU WIN $50';
+      heroSubtitle.textContent = 'and 150 FREE SPINS';
+    }
+    if (lang === 'tr') {
+      heroButton.textContent = 'Kayıt';
+      heroTitle.textContent = '50$ ve 150 BEDAVA';
+      heroSubtitle.textContent = 'DÖNDÜRME KAZANDINIZ';
+    }
   }
 
   const translations = {
@@ -137,7 +143,7 @@ heroButton.textContent = translations[lang].heroButton;
 
     if (selectedItem.classList.contains('lang__item_current')) return;
 
-    lang = localStorage.setItem('lang', selectedItem.getAttribute('data-lang'));
+    localStorage.setItem('lang', selectedItem.getAttribute('data-lang'));
 
     currentItem.querySelector('.lang__item-code').textContent = selectedItem.querySelector('.lang__item-code').textContent;
     currentItem.dataset.lang = selectedItem.dataset.lang;
@@ -154,6 +160,7 @@ heroButton.textContent = translations[lang].heroButton;
     });
 
     let currentLang = localStorage.getItem('lang');
+
     //translate
     heroTitle.textContent = translations[currentLang].heroTitle;
     heroSubtitle.textContent = translations[currentLang].heroSubtitle;
@@ -163,6 +170,10 @@ heroButton.textContent = translations[lang].heroButton;
     stepsItemTitle2.textContent = translations[currentLang].stepsItemTitle2;
     stepsItemTitle3.textContent = translations[currentLang].stepsItemTitle3;
     heroButton.textContent = translations[currentLang].heroButton;
+
+    if (heroContent.classList.contains('win')) {
+      changeStepTwoContent(currentLang);
+    }
 
     setLanguageSelector(currentLang);
   });
