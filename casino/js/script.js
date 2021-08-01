@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const slotColumns = document.querySelectorAll('.slot__column');
   const heroBox = document.querySelector('.hero__box');
 
-  let lang = localStorage.getItem('lang');
+  let lang = !!localStorage.getItem('lang') ? localStorage.getItem('lang') : 'en';
 
   setLanguageSelector(lang);
 
