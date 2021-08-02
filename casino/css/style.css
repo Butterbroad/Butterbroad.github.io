@@ -802,22 +802,26 @@ h6 {
   }
 }
 
-@media (max-width: 1920px) {
-  .hero__image {
-    min-width: 900px;
-  }
-}
-
 @media (max-width: 1920px) and (max-height: 1000px) {
+  .hero__wrapper {
+    padding: 40px 55px 60px;
+  }
+
   .hero__image {
     min-width: 800px;
     left: 125px;
   }
 }
 
+@media (max-width: 1920px) {
+  .hero__image {
+    min-width: 900px;
+  }
+}
+
 @media (max-width: 1600px) {
   .hero__wrapper {
-    padding: 10px 55px 80px;
+    padding: 10px 55px 60px;
   }
 }
 
@@ -982,7 +986,7 @@ h6 {
 
 @media (max-width: 1024px) and (min-height: 1300px) {
   .hero__wrapper {
-    padding: 40px 55px 80px;
+    padding: 40px 55px 60px;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
@@ -1021,7 +1025,7 @@ h6 {
   }
 
   .hero__wrapper {
-    padding: 40px 30px 80px;
+    padding: 40px 30px 60px;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
